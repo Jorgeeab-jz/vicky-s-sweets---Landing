@@ -5,7 +5,7 @@ body {
 .container {
     margin: auto;
     height: 100vh;
-    background: rgba(255, 204, 204,1.0);
+    background: rgb(255, 230, 230);
 }
 .top {
     margin: auto;
@@ -38,7 +38,6 @@ body {
     font-family: 'Berkshire Swash', cursive;
     font-size: 25px;
     color: rgba(48, 57, 82,1.0);
-    -webkit-text-stroke: 1pxwhite;
 }
 .logo-bottom {
     margin: auto;
@@ -47,4 +46,26 @@ body {
     font-family: 'Berkshire Swash', cursive;
     font-size: 40px;
     color: rgba(48, 57, 82,1.0);
+}
+.navbar {
+    margin: auto;
+    margin-top: -20px;
+    align-content: center;
+    justify-content: center;
+}
+.nav-links {
+    margin: auto;
+    align-content: center;
+    align-self: center;
+    justify-self: center;
+}
+.nav-links li {
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin: auto;
+    margin: 15px;
+    list-style: none;
+    display: inline-block;
 }
