@@ -6,6 +6,7 @@ body {
     margin: auto;
     height: 100vh;
     background: rgb(255, 230, 230);
+    justify-content: center;
 }
 .top {
     margin: auto;
@@ -15,7 +16,8 @@ body {
     margin: auto;
     position: relative;
     align-content: center;
-    
+    width: 250px;
+    height: auto;
 }
 .logo-text {
     margin: auto;
@@ -27,7 +29,6 @@ body {
 }
 .raw-logo {
     margin: auto;
-    margin-left: 15%;
     align-self: center;
     width: 250px;
     height: auto;
@@ -50,17 +51,14 @@ body {
 .navbar {
     margin: auto;
     margin-top: -20px;
-    align-content: center;
-    justify-content: center;
 }
 .nav-links {
     margin: auto;
-    align-content: center;
-    align-self: center;
-    justify-self: center;
+    padding: 0%;
+    text-align: center;
 }
 .nav-links li {
-    font-size: 15px;
+    font-size: 17px;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     text-align: center;
@@ -68,4 +66,29 @@ body {
     margin: 15px;
     list-style: none;
     display: inline-block;
+}
+.make-order {
+    margin: auto;
+    margin-top: 15px;
+    text-align: center;
+}
+.order-btn {
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    color: #ffeaa7;
+    font-weight: bolder;
+    margin: auto;
+    border-radius: 20px;
+    border: none;
+    outline-style: none;
+    background: #d63031;
+    width: 120px;
+    height: 50px;
+    box-shadow: 3px 3px 3px  rgba(207, 86, 86, 0.753);
+}
+
+.order-btn:active {
+    background: #a02323;
+    transform: scale(0.95);
+    text-shadow: 2px 2px 6px #fff8e0;
 }
