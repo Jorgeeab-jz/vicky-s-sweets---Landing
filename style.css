@@ -13,6 +13,7 @@ body {
 .top {
     margin: auto;
     margin-top: -40px;
+    background:  rgb(253, 203, 203);
 }
 .logo {
     margin: auto;
@@ -52,7 +53,7 @@ body {
 }
 .navbar {
     margin: auto;
-    margin-top: -20px;
+    margin-top: -50px;
 }
 .nav-links {
     margin: auto;
@@ -93,4 +94,130 @@ body {
     background: #a02323;
     transform: scale(0.95);
     text-shadow: 2px 2px 6px #fff8e0;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+.order-builder {
+    background-color:  #8d1414;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+.order-builder span {
+    color: #ffeaa7;
+    font-family: 'Raleway', sans-serif;
+
+}
+.order-builder .logo {
+    margin-top: -50px;
+}
+.logo-border {
+    width: 50%;
+    margin-top: -40px;
+    background: #ffeaa7;
+}
+.legend {
+    margin: auto;
+    margin-bottom: -15px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    font-family: 'Raleway', sans-serif;
+    font-size: 8px;
+    color: #ffeaa7;
+}
+.qty{
+    text-align: end;
+}
+.legend-border {
+    background: #ffeaa7;
+}
+.order-products {
+    margin-top: 20px;
+}
+.product {
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    color: #ffeaa7;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+}
+.qty-btn button {
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
+    margin-left: 5px;
+    background: none;
+    color: #ffeaa7;
+    outline-style: none;
+    border: 2px solid #ffeaa7;
+    border-radius: 50%;
+}
+.qty-btn button:active {
+    transform: scale(0.95);
+}
+.qty-display {
+    margin: auto;
+    margin-right: -1px;
+    border-radius: 10px;
+    padding: 0%;
+    width: 30px;
+    height: 30px;
+    background: cornsilk;
+    text-align: center;
+}
+.qty-display input {
+    font-family: sans-serif;
+    background: none;
+    border: none;
+    width: 80%;
+    margin-top: 7px;
+    text-align: center;
+    outline-style: none;
+}
+.total-display {
+    font-family: 'Raleway', sans-serif;
+    width: 50%;
+    color: #ffeaa7;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.total-display p {
+    font-size: 25px;
+    margin-left: -20px;
+    margin-top: 25px
+}
+.order-submit {
+    margin: auto;
+    text-align: center;
+}
+.order-submit button {
+    width: 80px;
+    height: 30px;
+    background: none;
+    border: 2px solid #ffeaa7;
+    border-radius: 20px;
+    outline-style: none;
+    color: #ffeaa7;
+    margin: auto;
+}
+.order-submit button:active {
+    transform: scale(0.95);
 }
