@@ -3,90 +3,250 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Cherry+Swash&family=Raleway:wght@200&display=swap" rel="stylesheet">
     <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
+
     <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
-    <title>Dulces Vicky</title>
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+    <script src="https://kit.fontawesome.com/6a6f102d22.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--Favico-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Vicky's Sweets menú Web</title>
 </head>
 <body>
-    <div class="container">
+    <header class="top-container">
         <div class="top">
-            <div class="logo">
-                <img class="raw-logo" src="media/Rawlogo.png" alt="Dulces Vicky">
-                <div class="logo-text">
-                    <h2 class="logo-top">Dulces</h2>
-                    <h1 class="logo-bottom">Vicky</h1>
-                </div>
+            <img src="logo.png" alt="Los Cubanitos 2010"> 
+        </div>
+        <div class="closed-sign">
+          <h2>Cerrado</h2>
+        </div>
+        <div class="open-sign">
+          <h2>Abierto</h2>
+        </div>
+    </header>
+    <h1 class="menu-title">MENÚ</h1>
+    <div class="menu">
+      <div class="accordion accordion-flush" id="accordionMenu">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              TORTAS
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionMenu">
+            <div id="cake-list" class="accordion-body row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            
             </div>
+          </div>
         </div>
-        <div class="navbar">
-            <nav>
-                <ul class="nav-links">
-                    <li>Galería</li>
-                    <li><a href="/html/menu.html">Menú</a></li>
-                    <li>Contacto</li>
-                </ul>
-            </nav>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              POSTRES FRIOS
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionMenu">
+            <div id="cold-list" class="accordion-body row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+            </div>
+          </div>
         </div>
-        <div class="make-order">
-            <button id="build-order" class="order-btn">Haz tu pedido</button>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button  class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              GALLETAS
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionMenu">
+            <div id="cookie-list" class="accordion-body row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+            </div>
+          </div>
         </div>
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFour">
+            <button  class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              COMBOS
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionMenu">
+            <div id="combo-list" class="accordion-body row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+            </div>
+          </div>
+        </div>
+
+        <!--
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingMax">
+            <button  class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseMax" aria-expanded="false" aria-controls="flush-collapseMax">
+              MAXI COMBOS
+            </button>
+          </h2>
+          <div id="flush-collapseMax" class="accordion-collapse collapse" aria-labelledby="flush-headingMax" data-bs-parent="#accordionMenu">
+            <div id="combo-max-list" class="accordion-body row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+            </div>
+          </div>
+        </div>
+        -->
+
+        <!--
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseOne">
+              POSTRES/EXTRAS
+            </button>
+          </h2>
+          <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionMenu">
+            <div id="extra-list" class="accordion-body row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+            </div>
+          </div>
+        </div>
+        -->
+        
+        <!--
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+              BEBIDAS
+            </button>
+          </h2>
+          <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionMenu">
+            <div class="accordion-body">
+              <div class="drink-sec row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="bebida-list">
+
+              </div>
+              <h2 class="drinks ">BATIDOS</h2>
+              <div class="drink-sec row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="batidos">
+                
+              </div>
+              <h2 class="drinks ">MERENGADAS</h2>
+              <div class="drink-sec row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="merengadas">
+              
+              </div>
+              <h2 class="drinks ">CALIENTES</h2>
+              <div class="drink-sec row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="calientes">
+               
+              </div>
+            </div>
+          </div>
+        </div>
+        -->
+
+      </div>
     </div>
-    <div class="modal" id="modal">
-        <div class="order-builder">
-            <span>X</span>
-            <div class="logo">
-                <img class="raw-logo" src="media/Rawlogo.png" alt="Dulces Vicky">
-                <div class="logo-text">
-                    <h2 class="logo-top">Dulces</h2>
-                    <h1 class="logo-bottom">Vicky</h1>
-                </div>
-            </div>
-            <hr class="logo-border">
-            <div id="products-container" class="order-products">
-                <div class="legend">
-                    <h2 class="name">Nombre</h2>
-                    <h2 class="price">Precio</h2>
-                    <h3 class="qty">Cantidad</h3>
-                </div>
-                <hr class="legend-border">
-                <div class="product">
-                    <h3>Rol de Canela</h3>
-                    <h4>0.3$</h4>
-                    <div class="qty-btn">
-                        <button id="add">+</button>
-                        <button id="remove">-</button>
-                    </div>
-                    <div class="qty-display">
-                        <input id="qty-display"
-                            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);
-                                                 if (this.value < 0) this.value = 0;"
-                            type = "number"
-                            min="0"
-                            maxlength = "3"
-                        />
-                    </div>
-                </div>
-            </div>
-            <div class="total-container">
-                <div class="total-display">
-                    <h1>Total:</h1>
-                    <p id="total-display"></p>
-                </div>
-            </div>
-            <div class="order-submit">
-                <button id="order-submit">Enviar</button>
-            </div>
-        </div>
+    <div class="social-container">
+      <div class="social-links">
+      <a target="_blank" href="https://instagram.com/vickysweets12?igshid=MzRlODBiNWFlZA==" ><i class="fab fa-instagram"></i></a>
+      <a target="_blank" href="https://wa.me/584121822719"><i class="fa fa-whatsapp"></i></a>
+      </div>
+      <p class="wpp-number">+58 412-1822719</p>
     </div>
+    <div class="cart-btn-container">
+      <button data-bs-toggle="modal" data-bs-target="#CartModal" id="open-cart"><i class="fas fa-shopping-cart"></i></button>
+      <small id="cart-qty-display"></small>
+    </div>
+<!-- Modal -->
+<div class="modal fade" id="CartModal" tabindex="-1" aria-labelledby="CartModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content cart-modal">
+      <div class="modal-header">
+        <h5 class="modal-title" id="CartModalLabel"><img src="logo.png" alt="Los Cubanitos 2010"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="cart-body" class="cart-items">
+
+        </div>
+      </div>
+      <div class="delivery-mode">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="delivery-mode" id="pickUp" checked>
+          <label class="form-check-label delivery-container" for="pickUp">
+            Retiro
+            <span>+ 0$</span>
+          </label>
+        </div>
+        <div class="form-check delivery-wrap">
+          <input class="form-check-input" type="radio" name="delivery-mode" id="delivery" disabled>
+          <label class="form-check-label delivery-container" for="delivery">
+            Delivery
+            <span id="delivery-price"></span>
+            <span id="del-note"></span>
+          </label>
+          
+        </div>
+      </div>
+      <div class="total-container">
+        <h2>TOTAL:</h2>
+        <p id="total-display">0Bss</p>
+      </div>
+      <div class="modal-footer">
+        <button id="send-btn" type="button" class="btn btn-primary">Enviar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="background"></div>
+<!-- Vertically centered modal -->
+<div class="modal fade" id="extraModal" tabindex="-1" aria-labelledby="extraModalLabel" aria-hidden="true">
+  <div class="modal-dialog extra-modal modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="pre-cart" class="order-name">
+          <h2 id="current-item-name"></h2>
+          <hr>
+
+          <div id="add-list" class="extra-list">
+  
+          </div>
+          <div id="cook-note">
+            <textarea placeholder="Nota..." 
+            name="cook-note" id="cook-message" cols="30" rows="10">
+          </textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer add-footer">
+    <div class="add-body">
+      <div class="pre-cart-total">
+        <span>Precio:</span>
+        <p id="pre-cart-total"></p>
+      </div>
+      <button id="add-cart-btn" class="btn btn-primary">
+        <i class="fas fa-cart-arrow-down"></i>
+      </button>
+    </div>
+  </div>
+</div>
+<div id="loading" class="spinner-border" role="status" style="color: #2980b9;">
+  <span class="visually-hidden">Loading...</span>
+</div>
 </body>
-<script src="script.js"></script>
+<script src="inventory.js"></script>
+<script src="cart.js"></script>
+<script src="animation.js"></script>
+<script src="logistic.js"></script>
 </html>

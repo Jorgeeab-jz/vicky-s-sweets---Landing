@@ -1,2 +1,2 @@
-# vicky-s-sweets---Landing
-Practice landing page to refresh practice
+# cubanitos-web
+On-line menu project for Los Cubanitos 2010 C.A.
